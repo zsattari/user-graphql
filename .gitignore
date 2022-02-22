@@ -1,0 +1,158 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+packages/*/node_modules
+packages/*/typedocs
+packages/*/dist
+packages/*/declarations
+**/*/.play
+/.pnp
+.pnp.js
+
+# css
+packages/**/*.css
+!packages/satek-client-desk/**/*.css
+!packages/satek-monitor-desk/**/*.css
+!packages/satek-provider-desk/**/*.css
+!packages/satek-mediator-desk/**/*.css
+!packages/satek-expert-desk/**/*.css
+!packages/shared-components/**/*.css
+
+# testing
+/coverage
+
+# production
+packages/*/build
+
+# resolvers
+packages/resolvers/dist
+packages/resolvers/src/types.ts
+packages/resolvers/schema.json
+
+# hooks
+packages/hooks/dist
+
+# misc
+packages/*/.DS_Store
+packages/*/.env.local
+packages/*/.env.development.local
+packages/*/.env.test.local
+packages/*/.env.production.local
+
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# for server
+.env
+lerna-debug.log
+packages/server/dist
+packages/server/logs
+packages/server/files
+packages/server/src/modules/base/test.resolver.ts
+packages/server/ormconfig.json
+packages/server/dump.rdb
+packages/server/yarn-error.log
+packages/server/unhandledExpections.log
+packages/server/src/migration
+
+#### React Native IGNOORES
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+\.buckd/
+# *.keystore
+!debug.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+
+# Bundle artifact
+*.jsbundle
+
+# CocoaPods
+/ios/Pods/
+
+#imedScrape
+
+packages/imedScrap/images/*
+packages/imedScrap/eng.traineddata
+
+#temporary validations
+packages/validations/src/validations/uploadedFile/*
+packages/validations/src/validations/upload/*
+packages/validations/src/validations/uploadedFile/*
+
+#test
+packages/server/.nyc_output
+
+#logs
+packages/server/logs
+packages/server/logs/*
+packages/server/*/*.log
+packages/server/logs/orderInfo.logs
+
+#apps
+packages/SatekMonitorApp/android/gradlew.bat
+packages/SatekMonitorApp/android/gradlew
+
+packages/.DS_Store
+.DS_Store
+packages/.DS_Store
+.DS_Store
+packages/server/unhandledExpections.log
+/packages/.DS_Store
+
+packages/server/.vscode/settings.json
+
+packages/server/dump.rdb
+packages/.DS_Store
+ui-ux/.DS_Store
+.DS_Store
+dump.rdb
+packages/server/logs/orderInfo.log
